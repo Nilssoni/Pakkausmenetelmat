@@ -1,5 +1,4 @@
 # Huffman coding algorithm implementation in Python
-
 class Node:
     def __init__(self, byte=None, freq=None):
         self.byte = byte
@@ -52,7 +51,7 @@ def huffman_encoding(data):
     return frequencies, huffman_codes
 
 def __main__():
-    with open(r"C:\Codes\Pakkausmenetelmat\Week_6\alice_in_wonderland.txt", "rb") as file:
+    with open(r"D:\codes\Pakkausmenetelmät\Week_6\alice_in_wonderland.txt", "rb") as file:
         data = file.read()
     frequencies = calculate_frequencies(data)
     root = build_huffman_tree(frequencies)
